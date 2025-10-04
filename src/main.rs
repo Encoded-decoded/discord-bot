@@ -53,11 +53,11 @@ async fn event_handler(
 ) -> Result<(), Error> {
     match event {
         poise::serenity_prelude::FullEvent::GuildMemberAddition { new_member } => {
-            let _greet_channel = ChannelId::new(1373832496801775717)
+            let _greet_channel = ChannelId::new(1392444888586518540)
                 .send_message(
                     &ctx.http, // Change this line
                     CreateMessage::new().content(format!(
-                        "Hello, {new_member}! Welcome to The Encoding Decoded Server! Everyone welcome {new_member}",
+                        "Welcome, {new_member}! It’s a privilege to have you around, it’s not the same without you, trust me.",
                     )),
                 )
                 .await?;
